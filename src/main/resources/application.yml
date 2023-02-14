@@ -1,0 +1,16 @@
+service:
+  name: @project.artifactId@
+  version: @project.version@
+
+spring:
+  datasource:
+    url: ${DATASOURCE_URL:jdbc:postgresql://localhost:5432/site}
+    username: ${DATASOURCE_USER:db_user}
+    password: ${DATASOURCE_PASS:db_password}
+    driver-class-name: org.postgresql.Driver
+    hikari:
+      maximum-pool-size: 2
+  liquibase:
+    enabled: true
+    change-log: classpath:db/changelog/db.changelog-master.yml
+

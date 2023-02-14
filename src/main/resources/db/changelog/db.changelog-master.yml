@@ -1,0 +1,165 @@
+databaseChangeLog:
+  - changeSet:
+      id: auto_parts_site/v1.0.1/schema/create_schema_site.sql
+      author: d.zinovev
+      changes:
+        - sqlFile:
+            path: changelog/schema/create_schema_site.sql
+            relativeToChangelogFile: true
+            splitStatements: false
+      validCheckSum:
+        - ANY
+
+  - changeSet:
+      id: auto_parts_site/v1.0.1/table/site_car_brand.sql
+      author: d.zinovev
+      changes:
+        - sqlFile:
+            path: changelog/table/site_car_brand.sql
+            relativeToChangelogFile: true
+            splitStatements: false
+      validCheckSum:
+        - ANY
+
+  - changeSet:
+      id: auto_parts_site/v1.0.1/table/site_car_model.sql
+      author: d.zinovev
+      changes:
+        - sqlFile:
+            path: changelog/table/site_car_model.sql
+            relativeToChangelogFile: true
+            splitStatements: false
+      validCheckSum:
+        - ANY
+
+  - changeSet:
+      id: auto_parts_site/v1.0.1/table/site_car.sql
+      author: d.zinovev
+      changes:
+        - sqlFile:
+            path: changelog/table/site_car.sql
+            relativeToChangelogFile: true
+            splitStatements: false
+      validCheckSum:
+        - ANY
+
+  - changeSet:
+      id: auto_parts_site/v1.0.1/table/site_car_engine.sql
+      author: d.zinovev
+      changes:
+        - sqlFile:
+            path: changelog/table/site_car_engine.sql
+            relativeToChangelogFile: true
+            splitStatements: false
+      validCheckSum:
+        - ANY
+
+  - changeSet:
+      id: auto_parts_site/v1.0.1/table/site_car_part_group.sql
+      author: d.zinovev
+      changes:
+        - sqlFile:
+            path: changelog/table/site_car_part_group.sql
+            relativeToChangelogFile: true
+            splitStatements: false
+      validCheckSum:
+        - ANY
+
+  - changeSet:
+      id: auto_parts_site/v1.0.1/table/site_car_part_brand.sql
+      author: d.zinovev
+      changes:
+        - sqlFile:
+            path: changelog/table/site_car_part_brand.sql
+            relativeToChangelogFile: true
+            splitStatements: false
+      validCheckSum:
+        - ANY
+
+  - changeSet:
+      id: auto_parts_site/v1.0.1/table/site_material.sql
+      author: d.zinovev
+      changes:
+        - sqlFile:
+            path: changelog/table/site_material.sql
+            relativeToChangelogFile: true
+            splitStatements: false
+      validCheckSum:
+        - ANY
+
+  - changeSet:
+      id: auto_parts_site/v1.0.1/table/site_color.sql
+      author: d.zinovev
+      changes:
+        - sqlFile:
+            path: changelog/table/site_color.sql
+            relativeToChangelogFile: true
+            splitStatements: false
+      validCheckSum:
+        - ANY
+
+  - changeSet:
+      id: auto_parts_site/v1.0.1/table/site_country.sql
+      author: d.zinovev
+      changes:
+        - sqlFile:
+            path: changelog/table/site_country.sql
+            relativeToChangelogFile: true
+            splitStatements: false
+      validCheckSum:
+        - ANY
+
+  - changeSet:
+      id: auto_parts_site/v1.0.1/table/site_car_part.sql
+      author: d.zinovev
+      changes:
+        - sqlFile:
+            path: changelog/table/site_car_part.sql
+            relativeToChangelogFile: true
+            splitStatements: false
+      validCheckSum:
+        - ANY
+
+  - changeSet:
+      id: auto_parts_site/v1.0.1/table/site_car_part_color.sql
+      author: d.zinovev
+      changes:
+        - sqlFile:
+            path: changelog/table/site_car_part_color.sql
+            relativeToChangelogFile: true
+            splitStatements: false
+      validCheckSum:
+        - ANY
+
+  - changeSet:
+      id: auto_parts_site/v1.0.1/table/site_car_part_material.sql
+      author: d.zinovev
+      changes:
+        - sqlFile:
+            path: changelog/table/site_car_part_material.sql
+            relativeToChangelogFile: true
+            splitStatements: false
+      validCheckSum:
+        - ANY
+
+  - changeSet:
+      id: auto_parts_site/v1.0.1/table/site_car_part_description.sql
+      author: d.zinovev
+      changes:
+        - sqlFile:
+            path: changelog/table/site_car_part_description.sql
+            relativeToChangelogFile: true
+            splitStatements: false
+      validCheckSum:
+        - ANY
+
+  - changeSet:
+      id: auto_parts_site/v1.0.1/table/site_car_part_image.sql
+      author: d.zinovev
+      changes:
+        - sqlFile:
+            path: changelog/table/site_car_part_image.sql
+            relativeToChangelogFile: true
+            splitStatements: false
+      validCheckSum:
+        - ANY
