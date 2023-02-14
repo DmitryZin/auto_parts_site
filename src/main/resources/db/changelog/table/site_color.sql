@@ -5,3 +5,7 @@ create table if not exists site.color(
     constraint pk__site__color primary key (id)
 );
 
+comment on table site.color             is 'Доступные цвета запчастей';
+comment on column site.color.id         is 'Идентификатор таблицы';
+comment on column site.color._ins_date  is 'Время добавления записи';
+comment on column site.color.color_name is 'Наименование цвета';

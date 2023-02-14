@@ -5,3 +5,7 @@ create table if not exists site.car_part_group(
     constraint pk__site__car_part_group primary key (id)
 );
 
+comment on table site.car_part_group                    is 'Группы запчастей';
+comment on column site.car_part_group.id                is 'Идентификатор таблицы - совпадает с идентификатором описываемой запчасти';
+comment on column site.car_part_group._ins_date         is 'Время добавления записи';
+comment on column site.car_part_group.part_group_name   is 'Наименование группы';

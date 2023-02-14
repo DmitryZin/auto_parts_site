@@ -8,3 +8,9 @@ create table if not exists site.car_model(
 );
 
 create index if not exists "ix__site__car_model__bcar_brand_id" on site.car_model(car_brand_id);
+
+comment on table site.car_model                 is 'Модель автомобиля';
+comment on column site.car_model.id             is 'Идентификатор таблицы';
+comment on column site.car_model._ins_date      is 'Время добавления записи';
+comment on column site.car_model.car_brand_id   is 'Модель какой марки';
+comment on column site.car_model.model_name     is 'Наименование модели автомобиля';

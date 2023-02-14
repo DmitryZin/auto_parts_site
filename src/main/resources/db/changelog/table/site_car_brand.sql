@@ -5,3 +5,7 @@ create table if not exists site.car_brand(
     constraint pk__site__car_brand primary key (id)
 );
 
+comment on table site.car_brand                 is 'Марка автомобиля';
+comment on column site.car_brand.id             is 'Идентификатор таблицы';
+comment on column site.car_brand._ins_date      is 'Время добавления записи';
+comment on column site.car_brand.brand_name     is 'Наименование марки автомобиля';

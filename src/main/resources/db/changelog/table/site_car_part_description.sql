@@ -8,3 +8,8 @@ create table if not exists site.car_part_description(
 
 -- описания в отдельной таблице, так как его показываем только на полной странице
 -- а без большого текстового поля радом с таблицей данных. поиск по таблице запчастей будет быстрее
+
+comment on table site.car_part_description              is 'Полное описание зап.части';
+comment on column site.car_part_description.id          is 'Идентификатор таблицы - совпадает с идентификатором описываемой запчасти';
+comment on column site.car_part_description._ins_date   is 'Время добавления записи';
+comment on column site.car_part_description.description is 'Описание';

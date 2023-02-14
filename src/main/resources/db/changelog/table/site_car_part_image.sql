@@ -8,3 +8,9 @@ create table if not exists site.car_part_image(
 );
 
 create index if not exists "ix__site__car_part_image__car_part_id" on site.car_part_image(car_part_id);
+
+comment on table site.car_part_image                is 'Изображения запчасти';
+comment on column site.car_part_image.id            is 'Идентификатор таблицы';
+comment on column site.car_part_image._ins_date     is 'Время добавления записи';
+comment on column site.car_part_image.car_part_id   is 'К какой запчасти относится изображение';
+comment on column site.car_part_image.url           is 'Ссылка на картинку';

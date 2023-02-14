@@ -11,3 +11,9 @@ create table if not exists site.car_part_color(
 create index if not exists "ix__site__car_part_color__car_part_id" on site.car_part_color(car_part_id);
 
 -- считаем, что по цвету запчасти никто не ищет
+
+comment on table site.car_part_color                    is 'Какие цвета есть на зап.части';
+comment on column site.car_part_color.id                is 'Идентификатор таблицы';
+comment on column site.car_part_color._ins_date         is 'Время добавления записи';
+comment on column site.car_part_color.car_part_id       is 'Ссылка на зап. часть';
+comment on column site.car_part_color.color_id          is 'Какой цвет содержится';
