@@ -13,6 +13,7 @@ create table if not exists site.car_part(
     rating                  numeric(6, 1)   null,
     key_features            jsonb           null,
     quantity_in_stock       int             null,
+    -- sale new hot и т.п. пропустил сознательно, особо на "показания" навыков/умений не влияет
     constraint pk__site__car_part primary key (id),
     constraint fk__site__car_part__car_id___site__car_model foreign key (car_id) references site.car(id),
     constraint fk__site__car_part__car_engine_id___site__car_engine foreign key (car_engine_id) references site.car_engine(id),
