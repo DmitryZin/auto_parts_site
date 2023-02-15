@@ -165,6 +165,50 @@ databaseChangeLog:
         - ANY
 
   - changeSet:
+      id: auto_parts_site/v1.0.1/function/site_car_part_get.sql
+      author: d.zinovev
+      changes:
+        - sqlFile:
+            path: changelog/function/site_car_part_get.sql
+            relativeToChangelogFile: true
+            splitStatements: false
+      validCheckSum:
+        - ANY
+
+  - changeSet:
+      id: auto_parts_site/v1.0.1/function/site_car_list.sql
+      author: d.zinovev
+      changes:
+        - sqlFile:
+            path: changelog/function/site_car_list.sql
+            relativeToChangelogFile: true
+            splitStatements: false
+      validCheckSum:
+        - ANY
+
+  - changeSet:
+      id: auto_parts_site/v1.0.1/function/site_car_part_list.sql
+      author: d.zinovev
+      changes:
+        - sqlFile:
+            path: changelog/function/site_car_part_list.sql
+            relativeToChangelogFile: true
+            splitStatements: false
+      validCheckSum:
+        - ANY
+
+  - changeSet:
+      id: auto_parts_site/v1.0.1/function/site_car_part_analog_list.sql
+      author: d.zinovev
+      changes:
+        - sqlFile:
+            path: changelog/function/site_car_part_analog_list.sql
+            relativeToChangelogFile: true
+            splitStatements: false
+      validCheckSum:
+        - ANY
+
+  - changeSet:
       id: auto_parts_site/v1.0.1/data/test_data.sql
       author: d.zinovev
       changes:

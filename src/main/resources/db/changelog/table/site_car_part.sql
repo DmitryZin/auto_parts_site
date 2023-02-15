@@ -9,8 +9,8 @@ create table if not exists site.car_part(
     vendor_code             varchar(255)    null,
     sku                     varchar(255)    null,
     part_name               varchar(255)    not null,
-    price                   money           null null constraint ch__car_part_price_positive check (price >= 0.00::money),
-    rating                  numeric(6, 1)   null,
+    price                   decimal(12, 2)  null null constraint ch__car_part_price_positive check (price >= 0.00),
+    rating                  decimal(6, 1)   null,
     key_features            jsonb           null,
     quantity_in_stock       int             null,
     -- sale new hot и т.п. пропустил сознательно, особо на "показания" навыков/умений не влияет

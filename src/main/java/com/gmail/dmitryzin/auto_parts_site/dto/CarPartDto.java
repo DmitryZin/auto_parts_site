@@ -14,8 +14,8 @@ public class CarPartDto {
     private final String countryName;
     private final String carBrand;
     private final String carModel;
-    private final Integer manufacture_year_start;
-    private final Integer manufacture_year_end;
+    private final Integer manufactureYearStart;
+    private final Integer manufactureYearEnd;
     private final String engineName;
     private final String keyFeatures;
     private final Integer quantityInStock;
@@ -24,4 +24,5 @@ public class CarPartDto {
     private final String images;
     private final String colors;
     private final String materials;
+    private final String groupName;
 }

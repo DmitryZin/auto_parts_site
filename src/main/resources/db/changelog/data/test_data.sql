@@ -1,3 +1,6 @@
+--я осознаю, что при неудачном первом запуске идентификаторы могут разъехаться
+--но усложнять данный скрипт для демонстрации навыков sql не хочется тратить время
+
 insert into site.material(material_name)
 values
     ('Steel'), ('Aluminium'), ('Thorium')  on conflict (material_name) do nothing;
@@ -39,3 +42,6 @@ values
     (1, null, 2, 1, 1, '111-203940-1', 'J8877292', 'Super Brake', 1000, 3.2, '{"quality": "low", "speed":"750 rpm"}', 10),
     (2, 3, 3, 3, 1, 'code1111', 'SKU0000099', 'Brembo brake', 999.99, 4.9,'{"quality": "high", "speed":"1000 rpm"}', 1);
 
+insert into site.car_part_image(car_part_id, url)
+values
+    (1, 'http://url.ru'), (1, 'http://url2.ru');
