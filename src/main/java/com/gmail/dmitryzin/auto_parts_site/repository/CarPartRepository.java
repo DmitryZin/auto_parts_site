@@ -15,7 +15,7 @@ public interface CarPartRepository extends CrudRepository<CarPartDto, Integer> {
     @Query("""
             call site.car_part_get(:id)
             """)
-    Optional<List<CarPartDto>> getCarPartById(@Param("id") Integer id);
+    Optional<CarPartDto> getCarPartById(@Param("id") Integer id);
 
     @Query("""
             call site.car_part_list(:page_num, :page_count, null, null, null, null, null)
