@@ -5,6 +5,8 @@ create table if not exists site.color(
     constraint pk__site__color primary key (id)
 );
 
+create unique index uix__site__color__color_name on site.color(color_name);
+
 comment on table site.color             is 'Доступные цвета запчастей';
 comment on column site.color.id         is 'Идентификатор таблицы';
 comment on column site.color._ins_date  is 'Время добавления записи';

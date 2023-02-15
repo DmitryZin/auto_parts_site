@@ -163,3 +163,14 @@ databaseChangeLog:
             splitStatements: false
       validCheckSum:
         - ANY
+
+  - changeSet:
+      id: auto_parts_site/v1.0.1/data/test_data.sql
+      author: d.zinovev
+      changes:
+        - sqlFile:
+            path: changelog/data/test_data.sql
+            relativeToChangelogFile: true
+            splitStatements: true
+      validCheckSum:
+        - ANY

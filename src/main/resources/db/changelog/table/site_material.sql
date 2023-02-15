@@ -5,6 +5,7 @@ create table if not exists site.material(
     constraint pk__site__material primary key (id)
 );
 
+create unique index uix__site__material__material_name on site.material(material_name);
 
 comment on table site.material                  is 'Доступные материалы запчастей';
 comment on column site.material.id              is 'Идентификатор таблицы';

@@ -5,6 +5,7 @@ create table if not exists site.country(
     constraint pk__site__country primary key (id)
 );
 
+create unique index uix__site__country__country_name on site.country(country_name);
 
 comment on table site.country               is 'Доступные страны';
 comment on column site.country.id           is 'Идентификатор таблицы';
