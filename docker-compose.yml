@@ -1,4 +1,10 @@
 version: "3.9"
+
+networks:
+  postgres:
+    driver: bridge
+
+
 services:
   postgres:
     container_name: postgres_container
@@ -53,7 +59,22 @@ services:
           memory: 4G
     networks:
       - postgres
-
-networks:
-  postgres:
-    driver: bridge
+  auto_part_site:
+    container_name: auto_part-site
+    build:
+      context: .
+      dockerfile: Dockerfile
+    deploy:
+      resources:
+        limits:
+          cpus: "1"
+          memory: 1024M
+    environment:
+      DATASOURCE_URL: "jdbc:postgresql://postgres_container:5432/site"
+      DATASOURCE_USER: "db_user"
+      DATASOURCE_PASS: "db_password"
+    ports:
+      - "8070:8080"
+    restart: always
+    networks:
+      - postgres

@@ -9,6 +9,9 @@ import java.util.List;
 
 @Service
 public class PreviewCarPartMapper {
+    private PreviewCarPartMapper(){
+
+    }
     public static PreviewCarPartDto mapPreviewCarPart(CarPartDto carPartDto){
         return new PreviewCarPartDto(carPartDto.getId(), carPartDto.getSku(), carPartDto.getPartName(),
                 carPartDto.getPrice(), carPartDto.getRating(), carPartDto.getBrandName(), carPartDto.getCountryName());
